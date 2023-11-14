@@ -3,6 +3,7 @@ import Tasklist from "../components/TaskList";
 import TaskCreate from "../components/TaskCreate";
 
 function Home() {
+  const [tasks, setTasks] = useState([]);
   const [type, setType] = useState("taskCreate");
   const handleOnClick = (text) => {
     if (text !== type) {
@@ -12,12 +13,25 @@ function Home() {
   };
   const containerClass =
     "container " + (type === "taskCreate" ? "right-panel-active" : "");
+
+  const createTask = (title, taskDesc) => {
+    const createdTasks = [
+      ...tasks,
+      {
+        id: Math.round(Math.random() * 9999),
+        title: title,
+        taskDesc: taskDesc,
+      },
+    ];
+    setTasks(createdTasks);
+  };
+
   return (
     <div>
       <div className="bg-custom-bg text-custom-text flex justify-center items-center h-screen w-full">
         <div className={containerClass} id="container">
-          <TaskCreate></TaskCreate>
-          <Tasklist></Tasklist>
+          <TaskCreate onCreate={createTask}></TaskCreate>
+          <Tasklist tasks32={tasks}></Tasklist>
           <div className="overlay-container">
             <div className="overlay">
               <div className="overlay-panel overlay-left ">
