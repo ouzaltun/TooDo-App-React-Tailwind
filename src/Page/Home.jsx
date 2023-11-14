@@ -21,7 +21,7 @@ function Home() {
           <div className="overlay-container">
             <div className="overlay">
               <div className="overlay-panel overlay-left ">
-                <h1 className="font-bold">Taskları Görüntüle</h1>
+                <h1 className="font-bold text-xl">Taskları Görüntüle</h1>
                 <p className="text-[16px] mt-4 mb-7 font-light tracking-wider leading-5 ">
                   Alttaki butona basıp eklediğin taskları görebilirsiniz.
                 </p>
@@ -34,7 +34,7 @@ function Home() {
                 </button>
               </div>
               <div className="overlay-panel overlay-right">
-                <h1 className="font-bold">Task Ekle</h1>
+                <h1 className="font-bold text-xl">Task Ekle</h1>
                 <p className="text-[16px] mt-4 mb-7 font-light tracking-wider leading-5">
                   Bu panelden task ekleyebilirsiniz.
                 </p>
