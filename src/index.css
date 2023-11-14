@@ -24,9 +24,9 @@ button.ghost {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
-  width: 768px;
+  width: 90vw;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 80vh;
 }
 
 .form-container {
@@ -128,6 +128,9 @@ button.ghost {
 
 .container.right-panel-active .overlay-left {
   transform: translateX(0);
+}
+.container.right-panel-active .sasa {
+  transform: translateX(50%) !important;
 }
 
 .overlay-right {
