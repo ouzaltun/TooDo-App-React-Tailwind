@@ -9,7 +9,7 @@ export default {
         "custom-second": "#b68973",
       },
       color: {
-        "custom-text": "#fff",
+        "custom-text": "#1e212d",
       },
     },
   },
