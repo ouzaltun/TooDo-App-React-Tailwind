@@ -8,8 +8,8 @@ export default {
         "custom-main": "#eabf9f",
         "custom-second": "#b68973",
       },
-      textColor: {
-        "custom-text": "#1e212d",
+      color: {
+        "custom-text": "#fff",
       },
     },
   },

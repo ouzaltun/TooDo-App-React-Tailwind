@@ -27,6 +27,7 @@ button.ghost {
   width: 90vw;
   max-width: 100%;
   min-height: 80vh;
+  max-height: 80vh;
 }
 
 .form-container {
@@ -130,7 +131,8 @@ button.ghost {
   transform: translateX(0);
 }
 .container.right-panel-active .sasa {
-  transform: translateX(50%) !important;
+  transform: translateX(5%) !important;
+  /*Classnames yazmak gerekcek 50% yapıp z index ayarlaması*/
 }
 
 .overlay-right {
