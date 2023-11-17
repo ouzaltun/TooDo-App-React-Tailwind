@@ -6,7 +6,7 @@ function TaskItem({ task67 }) {
   console.log(task67);
   return (
     <div className="relative mr-4 flex flex-col">
-      <div className="!relative py-3 px-2 sm:px-6 border-2 border-[#b68973] rounded-3xl tracking-wide ">
+      <div className="!relative py-3 px-2 sm:px-6 border-2 border-[#eabf9f] rounded-3xl tracking-wide ">
         <div className="flex flex-col gap-y-2 text-left">
           <div>
             <h1 className=" font-extrabold text-lg">Task Title</h1>
@@ -20,10 +20,10 @@ function TaskItem({ task67 }) {
           </div>
         </div>
         <div className="md:absolute sm:justify-end sm:items-start sm:px-10 static w-full flex flex-row bottom-0 md:top-0 mt-2 sm:flex-row items-center justify-center gap-x-4 ">
-          <div className="w-8 h-8 text-custom-text hover:bg-custom-second bg-custom-main rounded-3xl pl-1 cursor-pointer flex justify-center items-center">
+          <div className="w-8 h-8 transition-colors text-custom-text hover:bg-custom-second bg-custom-main rounded-3xl pl-1 cursor-pointer flex justify-center items-center">
             <FaRegEdit className="rounded w-5 h-5" />
           </div>
-          <div className="w-8 h-8 text-custom-text hover:bg-custom-second bg-custom-main rounded-3xl cursor-pointer  flex justify-center items-center">
+          <div className="transition-colors w-8 h-8 text-custom-text hover:bg-red-400 bg-custom-main rounded-3xl cursor-pointer  flex justify-center items-center">
             <RiDeleteBinLine className="rounded w-5 h-5" />
           </div>
         </div>
