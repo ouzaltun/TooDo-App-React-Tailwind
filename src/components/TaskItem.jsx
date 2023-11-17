@@ -5,7 +5,7 @@ import { FaRegEdit } from "react-icons/fa";
 function TaskItem({ task67 }) {
   console.log(task67);
   return (
-    <div className="relative flex flex-col">
+    <div className="relative mr-4 flex flex-col">
       <div className="!relative py-3 px-2 sm:px-6 border-2 border-[#b68973] rounded-3xl tracking-wide ">
         <div className="flex flex-col gap-y-2 text-left">
           <div>

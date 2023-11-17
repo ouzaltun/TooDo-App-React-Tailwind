@@ -9,6 +9,17 @@
   --text: #1e212d;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b68973;
+  opacity: 0.8;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
