@@ -20,10 +20,10 @@ function TaskItem({ task67 }) {
           </div>
         </div>
         <div className="md:absolute cursor-pointer sm:justify-end sm:items-start sm:px-10 static w-full flex flex-row bottom-0 md:top-0 mt-2 sm:flex-row items-center justify-center gap-x-4 ">
-          <div className=" w-8 h-8 text-custom-text bg-custom-second rounded-3xl pl-1 cursor-pointer flex justify-center items-center">
+          <div className=" w-8 h-8 text-custom-text bg-custom-main rounded-3xl pl-1 cursor-pointer flex justify-center items-center">
             <FaRegEdit className="w-5 h-5 " />
           </div>
-          <div className=" w-8 h-8 text-custom-text bg-custom-second rounded-3xl cursor-pointer  flex justify-center items-center">
+          <div className=" w-8 h-8 text-custom-text bg-custom-main rounded-3xl cursor-pointer  flex justify-center items-center">
             <RiDeleteBinLine className="hover: rounded w-5 h-5" />
           </div>
         </div>
