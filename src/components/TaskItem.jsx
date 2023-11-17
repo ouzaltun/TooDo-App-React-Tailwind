@@ -10,13 +10,15 @@ function TaskItem({ task67 }) {
         <div className="flex flex-col gap-y-2 text-left">
           <div>
             <h1 className=" font-extrabold text-lg">Task Title</h1>
-            <p className="text-[16px] mt-2 font-medium tracking-wider leading-5">
+            <p className=" break-words text-[16px] mt-2 font-medium tracking-wider leading-5">
               {task67.title}
             </p>
           </div>
           <div>
             <h1 className="font-bold text-base">Task Description</h1>
-            <p>{task67.taskDesc}</p>
+            <p className="break-words text-[14px] mt-2 font-medium tracking-wider leading-5">
+              {task67.taskDesc}
+            </p>
           </div>
         </div>
         <div className="md:absolute sm:justify-end sm:items-start sm:px-10 static w-full flex flex-row bottom-0 md:top-0 mt-2 sm:flex-row items-center justify-center gap-x-4 ">
