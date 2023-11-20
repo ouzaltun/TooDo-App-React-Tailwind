@@ -20,7 +20,7 @@ function SignUpForm({ onCreate }) {
     setTaskDesc("");
   };
   return (
-    <div className="form-container  taskcreate-container">
+    <div className="form-container !z-50  taskcreate-container">
       <form
         onSubmit={handleSubmit}
         className="bg-white flex items-center justify-center flex-col px-12 h-full text-center"
@@ -39,7 +39,7 @@ function SignUpForm({ onCreate }) {
           value={taskDesc}
           onChange={handleTaskChange}
           placeholder="Task Açıklaması"
-          className="bg-[#eee] border border-[#eabf py-6 h-[150px] rounded-3xl px-4 my-2 w-full placeholder:text-sm "
+          className="bg-[#eee] border border-[#eabf9f] py-6 h-[150px] rounded-3xl px-4 my-2 w-full placeholder:text-sm "
         />
 
         <button className=" active:scale-95 rounded-3xl border border-solid-custom-main bg-custom-main text-custom-text text-[12px] font-bold uppercase transition-transform tracking-wide py-3 px-11">

@@ -25,6 +25,17 @@ function Home() {
     ];
     setTasks(createdTasks);
   };
+
+  const editTaskById = (id, updatedTitle, updatedTaskDesc) => {
+    const updatedTasks = tasks.map((task) => {
+      if (task.id === id) {
+        return { id, title: updatedTitle, taskDesc: updatedTaskDesc };
+      }
+      return task;
+    });
+    setTasks(updatedTasks);
+  };
+
   const deleteTaskById = (id) => {
     const afterDeletingTasks = tasks.filter((task) => {
       return task.id !== id;
@@ -37,7 +48,11 @@ function Home() {
       <div className="bg-custom-bg text-custom-text flex justify-center items-center h-screen w-full">
         <div className={containerClass} id="container">
           <TaskCreate onCreate={createTask}></TaskCreate>
-          <Tasklist onDelete32={deleteTaskById} tasks32={tasks}></Tasklist>
+          <Tasklist
+            onUpdate={editTaskById}
+            onDelete32={deleteTaskById}
+            tasks32={tasks}
+          ></Tasklist>
           <div className="overlay-container">
             <div className="overlay">
               <div className="overlay-panel overlay-left ">
