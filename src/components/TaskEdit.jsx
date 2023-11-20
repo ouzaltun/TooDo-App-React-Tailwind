@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RiDeleteBinLine } from "react-icons/ri";
-import { IoIosCheckmark } from "react-icons/io";
+import { IoCheckmarkOutline } from "react-icons/io5";
 
 function TaskEdit({ tasks, onDelete, onEdit }) {
   const [editedTask, setEditedTask] = useState({ ...tasks });
@@ -42,7 +42,7 @@ function TaskEdit({ tasks, onDelete, onEdit }) {
             onClick={editItem}
             className="w-8 h-8 transition-colors text-custom-text hover:bg-green-300 bg-custom-main rounded-3xl cursor-pointer flex justify-center items-center"
           >
-            <IoIosCheckmark className="rounded w-5 h-5" />
+            <IoCheckmarkOutline className="rounded w-5 h-5" />
           </div>
           <div
             onClick={deleteItem}
