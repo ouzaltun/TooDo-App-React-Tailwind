@@ -25,13 +25,19 @@ function Home() {
     ];
     setTasks(createdTasks);
   };
+  const deleteTaskById = (id) => {
+    const afterDeletingTasks = tasks.filter((task) => {
+      return task.id !== id;
+    });
+    setTasks(afterDeletingTasks);
+  };
 
   return (
     <div>
       <div className="bg-custom-bg text-custom-text flex justify-center items-center h-screen w-full">
         <div className={containerClass} id="container">
           <TaskCreate onCreate={createTask}></TaskCreate>
-          <Tasklist tasks32={tasks}></Tasklist>
+          <Tasklist onDelete32={deleteTaskById} tasks32={tasks}></Tasklist>
           <div className="overlay-container">
             <div className="overlay">
               <div className="overlay-panel overlay-left ">
