@@ -57,12 +57,12 @@ function Home() {
             <div className="overlay">
               <div className="overlay-panel overlay-left ">
                 <h1 className="font-bold text-xl">Taskları Görüntüle</h1>
-                <p className="text-[16px] mt-4 mb-7 font-light tracking-wider leading-5 ">
+                <p className="text-[12px] md:text-[16px] mt-4 mb-7 font-light tracking-wider leading-5 ">
                   Alttaki buton aracılığıyla eklediğin tasklarınızı
                   görebilirsiniz.
                 </p>
                 <button
-                  className="ghost rounded-3xl border border-solid-custom-main bg-custom-main text-custom-text text-[12px] font-bold uppercase transition-transform tracking-wide py-3 px-11 active:scale-95"
+                  className="ghost rounded-3xl border border-solid-custom-main bg-custom-main text-custom-text text-[8px] md:text-[12px] font-bold uppercase transition-transform tracking-wide py-2 md:py-3 px-4 md:px-11 active:scale-95"
                   id="taskList"
                   onClick={() => handleOnClick("taskList")}
                 >
@@ -71,11 +71,11 @@ function Home() {
               </div>
               <div className="overlay-panel overlay-right">
                 <h1 className="font-bold text-xl">Task Ekle</h1>
-                <p className="text-[16px] mt-4 mb-7 font-light tracking-wider leading-5">
+                <p className="text-[12px] md:text-[16px] mt-4 mb-7 font-light tracking-wider leading-5">
                   Alttaki buton aracılığıyla task ekleyebilirsiniz.
                 </p>
                 <button
-                  className="ghost rounded-3xl border border-solid-custom-main bg-custom-main text-custom-text text-[12px] font-bold uppercase transition-transform tracking-wide py-3 px-11 active:scale-95 "
+                  className="ghost rounded-3xl border border-solid-custom-main bg-custom-main text-custom-text text-[8px] md:text-[12px] font-bold uppercase transition-transform tracking-wide py-3 px-6 md:px-11 active:scale-95 "
                   id="taskCreate"
                   onClick={() => handleOnClick("taskCreate")}
                 >

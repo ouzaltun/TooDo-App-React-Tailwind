@@ -18,7 +18,7 @@ function TaskEdit({ tasks, onDelete, onEdit }) {
     <div className="w-full z-50">
       <form className="">
         <div className="flex flex-col gap-y-1 text-left w-[85%] ">
-          <h1 className="font-extrabold text-lg">Task Title</h1>
+          <h1 className="font-extrabold text-[16px] md:text-lg">Task Title</h1>
           <input
             value={editedTask.title}
             placeholder="Task Başlığı"
@@ -27,7 +27,9 @@ function TaskEdit({ tasks, onDelete, onEdit }) {
             }
             className="break-words bg-[#eee] border border-[#eabf9f] z-50  px-4  w-full rounded-3xl placeholder:text-sm "
           />
-          <h1 className="font-bold text-base">Task Description</h1>
+          <h1 className="font-bold text-[14px]  md:text-base">
+            Task Description
+          </h1>
           <input
             value={editedTask.taskDesc}
             placeholder="Task Açıklaması"

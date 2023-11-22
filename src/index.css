@@ -37,8 +37,8 @@ button.ghost {
   overflow: hidden;
   width: 70vw;
   max-width: 100%;
-  min-height: 60vh;
-  max-height: 60vh;
+  min-height: 65vh;
+  max-height: 65vh;
 }
 
 .form-container {
@@ -104,8 +104,6 @@ button.ghost {
 .overlay {
   background: -webkit-linear-gradient(to right, var(--main), var(--second));
   background: linear-gradient(to right, var(--second), var(--main));
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: 0 0;
   position: relative;
   left: -100%;
@@ -153,4 +151,13 @@ button.ghost {
 
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 95vw;
+  }
+  .overlay-panel {
+    padding: 0 3px;
+  }
 }

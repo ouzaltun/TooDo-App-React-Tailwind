@@ -22,7 +22,7 @@ function TaskItem({ task67, onDelete, onUpdate }) {
   };
 
   return (
-    <div className="relative mr-4 flex flex-col">
+    <div className="relative mr-2 md:mr-4 flex flex-col">
       {showEdit ? (
         <>
           <div className="!relative py-3 px-2 sm:px-6 border-2 border-[#eabf9f] rounded-3xl tracking-wide">
@@ -44,14 +44,18 @@ function TaskItem({ task67, onDelete, onUpdate }) {
           <div className="!relative py-3 px-2 sm:px-6 border-2 border-[#eabf9f] rounded-3xl tracking-wide ">
             <div className="flex flex-col gap-y-2 text-left">
               <div>
-                <h1 className=" font-extrabold text-lg">Task Title</h1>
-                <p className=" break-words text-[16px] mt-2 font-medium tracking-wider leading-5">
+                <h1 className=" font-extrabold text-[16px] md:text-lg">
+                  Task Title
+                </h1>
+                <p className=" break-words  text-[12px] md:text-[14px] mt-2 font-medium tracking-wider leading-5">
                   {task67.title}
                 </p>
               </div>
               <div>
-                <h1 className="font-bold text-base">Task Description</h1>
-                <p className="break-words text-[14px] mt-2 font-medium tracking-wider leading-5">
+                <h1 className="font-bold text-[14px]  md:text-base">
+                  Task Description
+                </h1>
+                <p className="break-words text-[12px] md:text-[14px] mt-2 font-medium tracking-wider leading-5">
                   {task67.taskDesc}
                 </p>
               </div>
