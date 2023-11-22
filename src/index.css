@@ -139,10 +139,6 @@ button.ghost {
 .container.right-panel-active .overlay-left {
   transform: translateX(0);
 }
-.container.right-panel-active .sasa {
-  transform: translateX(5%) !important;
-  /*Classnames yazmak gerekcek 50% yapıp z index ayarlaması*/
-}
 
 .overlay-right {
   right: 0;
